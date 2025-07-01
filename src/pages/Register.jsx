@@ -15,7 +15,7 @@ function Register() {
     e.preventDefault();
     try {
       await axios.post('http://localhost:3000/api/users/register', form);
-      navigate('/dashboard');
+      navigate('/login');
     } catch (err) {
       console.log(err.message)
       setError(err.response?.data?.message || 'Registration failed');
