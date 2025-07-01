@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/login' element={<Login />} />
-        <Route path='/register' element={<Register />} />
+        <Route path='/' element={<Register />} />
         <Route path='/admin' element={<AdminPanel />} />
         <Route path='/my-bookings' element={<MyBookings />} />
       </Routes>
